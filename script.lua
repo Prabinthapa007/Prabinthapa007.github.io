@@ -7,6 +7,8 @@ Prabinthapa07.github.io/
 |   |-- styles.css
 |-- js/
 |   |-- scripts.js
+|-- lua/
+|   |-- script.lua
 |-- images/
 |   |-- profile.jpg
 |   |-- project1.jpg
