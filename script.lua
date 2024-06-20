@@ -10,6 +10,7 @@ portfolio/
 │   └── scripts.js
 │
 ├── index.html
+├── about.html
 ├── resume.html
 ├── portfolio.html
 └── contact.html

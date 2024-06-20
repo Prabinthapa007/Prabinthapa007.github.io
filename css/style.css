@@ -12,34 +12,7 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #f4f4f9;
     color: #333;
-}
-
-/* Header and Navigation */
-header {
-    background-color: #4CAF50;
-    padding: 1rem;
-    text-align: center;
-    color: white;
-}
-
-nav ul {
-    list-style: none;
     display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 1rem;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-nav ul li a.active, nav ul li a:hover {
-    color: #ffeb3b;
 }
 
 /* Sidebar Navigation */
@@ -52,6 +25,9 @@ nav ul li a.active, nav ul li a:hover {
     left: 0;
     height: 100%;
     width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .sidebar ul {
@@ -75,10 +51,15 @@ nav ul li a.active, nav ul li a:hover {
     border-radius: 5px;
 }
 
+.sidebar footer {
+    text-align: center;
+}
+
 /* Main Content */
 .main-content {
     margin-left: 220px;
     padding: 2rem;
+    flex-grow: 1;
 }
 
 .hero {
@@ -110,11 +91,22 @@ nav ul li a.active, nav ul li a:hover {
     margin-bottom: 1rem;
 }
 
+.about p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
 /* Resume Section */
 .resume {
     background-color: #e0f7fa;
     padding: 2rem;
     border-radius: 10px;
+}
+
+.resume h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
 }
 
 /* Portfolio Section */
