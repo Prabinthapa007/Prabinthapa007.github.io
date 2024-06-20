@@ -10,17 +10,34 @@
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About</a></li>
+                <li><a href="resume.html">Resume</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <section class="hero">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Explore my work and projects.</p>
-    </section>
+    <div class="sidebar">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <section class="hero">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Explore my work and projects.</p>
+        </section>
+        <section id="about" class="about">
+            <h1>About Me</h1>
+            <img src="images/Prabin.JPG" alt="Profile Picture" width="500" height="600">
+            <p>Hello! I'm Prabin Thapa, I’m aspiring data scientist who loves anticipating facts from datasets. I have strong technical skills particularly in mathematics, statistics and Python. I have a passion for devising original algorithms to address business challenges and effectively conveying intricate concepts to stakeholders in the business realm.</p>
+        </section>
+    </div>
     <footer>
         <p>&copy; 2024 My Portfolio</p>
     </footer>
