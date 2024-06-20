@@ -1,75 +1,195 @@
+/* General styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    background-color: #f2f2f2;
+    color: #333;
 }
 
+/* Header styles */
 header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
+    background-color: #4a00e0;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
 }
 
-nav ul {
-    list-style-type: none;
+header nav ul {
+    list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
 }
 
-nav ul li {
+header nav ul li {
+    display: inline;
     margin: 0 15px;
 }
 
-nav ul li a {
-    color: white;
+header nav ul li a {
+    color: #fff;
     text-decoration: none;
+    font-size: 18px;
 }
 
+/* Hero section styles */
 .hero {
-    background-color: #f4f4f4;
+    background-color: #4a00e0;
+    color: #fff;
+    padding: 100px 0;
     text-align: center;
-    padding: 50px 0;
 }
 
-.about, .portfolio, .contact {
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
+.hero h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 24px;
+    margin: 10px 0 0;
+}
+
+/* About section styles */
+.about {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
 }
 
 .about img {
-    max-width: 150px;
     border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Portfolio section styles */
+.portfolio {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.portfolio h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.portfolio .project {
+    display: inline-block;
+    margin: 20px;
+    text-align: left;
+    width: 300px;
+    vertical-align: top;
+}
+
+.portfolio .project img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.portfolio .project h2 {
+    font-size: 24px;
+    margin: 10px 0 5px;
+}
+
+.portfolio .project p {
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+/* Contact section styles */
+.contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    display: inline-block;
+    text-align: left;
+    width: 300px;
+}
+
+.contact form label {
     display: block;
-    margin: 0 auto;
+    margin-bottom: 5px;
+    font-weight: bold;
 }
 
-.project {
-    margin: 20px 0;
-}
-
-.project img {
-    max-width: 100%;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-form label, form input, form textarea {
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 10px;
     margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
+.contact form button {
+    background-color: #4a00e0;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact form button:hover {
+    background-color: #3700b3;
+}
+
+/* Footer styles */
 footer {
     background-color: #333;
-    color: white;
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
+    position: relative;
     bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .about h1,
+    .portfolio h1,
+    .contact h1 {
+        font-size: 28px;
+    }
+
+    .portfolio .project {
+        width: 100%;
+    }
+
+    .contact form {
+        width: 100%;
+    }
 }
